@@ -10,4 +10,9 @@ public class BusTest{
     bus = new Bus();
     person = new Person();
   }
+
+  @Test
+  public void busStartsEmpty(){
+    assertEquals(0, bus.passengerCount());
+  }
 }
